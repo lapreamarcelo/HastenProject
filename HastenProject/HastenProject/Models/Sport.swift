@@ -7,9 +7,16 @@
 //
 
 import Foundation
+import Gloss
 
-struct Sport{
+struct Sport: Decodable{
     let type:String?
     let title:String?
     var players:[Player]?
+    
+    init?(json: JSON) {
+        self.type = "type" <~~ json ?? ""
+        self.title = "title" <~~ json ?? ""
+        self.players = "players" <~~ json ?? []
+    }
 }
