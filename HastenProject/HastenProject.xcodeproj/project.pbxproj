@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		37EE687684C9B46DD5FCF9F7 /* Pods_HastenProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A9E071A4683A66E8F50D7A /* Pods_HastenProject.framework */; };
 		6340268D2014B15200ED8058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340268C2014B15200ED8058 /* AppDelegate.swift */; };
-		6340268F2014B15200ED8058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340268E2014B15200ED8058 /* ViewController.swift */; };
 		634026922014B15200ED8058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634026902014B15200ED8058 /* Main.storyboard */; };
 		634026942014B15200ED8058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634026932014B15200ED8058 /* Assets.xcassets */; };
 		634026972014B15200ED8058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634026952014B15200ED8058 /* LaunchScreen.storyboard */; };
+		634026A02014B31C00ED8058 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340269E2014B31C00ED8058 /* SportsViewController.swift */; };
+		634026A12014B31C00ED8058 /* SportsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6340269F2014B31C00ED8058 /* SportsViewController.xib */; };
+		634026A52014B34900ED8058 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634026A42014B34900ED8058 /* Sport.swift */; };
+		634026A72014B35200ED8058 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634026A62014B35200ED8058 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05950A5DC24A429382C09682 /* Pods-HastenProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject.release.xcconfig"; sourceTree = "<group>"; };
 		634026892014B15200ED8058 /* HastenProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HastenProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6340268C2014B15200ED8058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6340268E2014B15200ED8058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		634026912014B15200ED8058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		634026932014B15200ED8058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		634026962014B15200ED8058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		634026982014B15200ED8058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6340269E2014B31C00ED8058 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		6340269F2014B31C00ED8058 /* SportsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsViewController.xib; sourceTree = "<group>"; };
+		634026A42014B34900ED8058 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		634026A62014B35200ED8058 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		63A9E071A4683A66E8F50D7A /* Pods_HastenProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943D1C6343BC6A9BA380CF2C /* Pods-HastenProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,13 +68,40 @@
 			isa = PBXGroup;
 			children = (
 				6340268C2014B15200ED8058 /* AppDelegate.swift */,
-				6340268E2014B15200ED8058 /* ViewController.swift */,
 				634026902014B15200ED8058 /* Main.storyboard */,
+				634026A82014B3CB00ED8058 /* Models */,
+				634026A22014B32200ED8058 /* Controllers */,
+				634026A32014B32B00ED8058 /* Views */,
 				634026932014B15200ED8058 /* Assets.xcassets */,
 				634026952014B15200ED8058 /* LaunchScreen.storyboard */,
 				634026982014B15200ED8058 /* Info.plist */,
 			);
 			path = HastenProject;
+			sourceTree = "<group>";
+		};
+		634026A22014B32200ED8058 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6340269E2014B31C00ED8058 /* SportsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		634026A32014B32B00ED8058 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6340269F2014B31C00ED8058 /* SportsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		634026A82014B3CB00ED8058 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				634026A42014B34900ED8058 /* Sport.swift */,
+				634026A62014B35200ED8058 /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		960530C76280826D27FA686C /* Frameworks */ = {
@@ -153,6 +186,7 @@
 				634026972014B15200ED8058 /* LaunchScreen.storyboard in Resources */,
 				634026942014B15200ED8058 /* Assets.xcassets in Resources */,
 				634026922014B15200ED8058 /* Main.storyboard in Resources */,
+				634026A12014B31C00ED8058 /* SportsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6340268F2014B15200ED8058 /* ViewController.swift in Sources */,
+				634026A72014B35200ED8058 /* Player.swift in Sources */,
 				6340268D2014B15200ED8058 /* AppDelegate.swift in Sources */,
+				634026A52014B34900ED8058 /* Sport.swift in Sources */,
+				634026A02014B31C00ED8058 /* SportsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
