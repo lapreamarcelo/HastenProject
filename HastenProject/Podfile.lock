@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Gloss (2.0.0)
+  - Kingfisher (4.6.1)
+  - Moya (10.0.1):
+    - Moya/Core (= 10.0.1)
+  - Moya/Core (10.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.4)
+
+DEPENDENCIES:
+  - Gloss
+  - Kingfisher
+  - Moya
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Gloss: b67617f327406adfd47adf20172d00680a3a31bd
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+
+PODFILE CHECKSUM: e0cf36201898cec3209f6c54947f9c890317036a
+
+COCOAPODS: 1.3.1

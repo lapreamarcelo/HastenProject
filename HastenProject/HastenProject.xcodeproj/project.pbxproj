@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37EE687684C9B46DD5FCF9F7 /* Pods_HastenProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A9E071A4683A66E8F50D7A /* Pods_HastenProject.framework */; };
 		6340268D2014B15200ED8058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340268C2014B15200ED8058 /* AppDelegate.swift */; };
 		6340268F2014B15200ED8058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340268E2014B15200ED8058 /* ViewController.swift */; };
 		634026922014B15200ED8058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634026902014B15200ED8058 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05950A5DC24A429382C09682 /* Pods-HastenProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject.release.xcconfig"; sourceTree = "<group>"; };
 		634026892014B15200ED8058 /* HastenProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HastenProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6340268C2014B15200ED8058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6340268E2014B15200ED8058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		634026932014B15200ED8058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		634026962014B15200ED8058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		634026982014B15200ED8058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A9E071A4683A66E8F50D7A /* Pods_HastenProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		943D1C6343BC6A9BA380CF2C /* Pods-HastenProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EE687684C9B46DD5FCF9F7 /* Pods_HastenProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				6340268B2014B15200ED8058 /* HastenProject */,
 				6340268A2014B15200ED8058 /* Products */,
+				A268C6D05A30A6887FE5B1AA /* Pods */,
+				960530C76280826D27FA686C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = HastenProject;
 			sourceTree = "<group>";
 		};
+		960530C76280826D27FA686C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A9E071A4683A66E8F50D7A /* Pods_HastenProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A268C6D05A30A6887FE5B1AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				943D1C6343BC6A9BA380CF2C /* Pods-HastenProject.debug.xcconfig */,
+				05950A5DC24A429382C09682 /* Pods-HastenProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6340269B2014B15200ED8058 /* Build configuration list for PBXNativeTarget "HastenProject" */;
 			buildPhases = (
+				4B61453E152B6AFE016A5BFA /* [CP] Check Pods Manifest.lock */,
 				634026852014B15200ED8058 /* Sources */,
 				634026862014B15200ED8058 /* Frameworks */,
 				634026872014B15200ED8058 /* Resources */,
+				2215A3CECB80757CB2E00A65 /* [CP] Embed Pods Frameworks */,
+				CB260D322852B9AAA9FBBB7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2215A3CECB80757CB2E00A65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B61453E152B6AFE016A5BFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HastenProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB260D322852B9AAA9FBBB7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		634026852014B15200ED8058 /* Sources */ = {
@@ -272,6 +361,7 @@
 		};
 		6340269C2014B15200ED8058 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943D1C6343BC6A9BA380CF2C /* Pods-HastenProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +377,7 @@
 		};
 		6340269D2014B15200ED8058 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05950A5DC24A429382C09682 /* Pods-HastenProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
