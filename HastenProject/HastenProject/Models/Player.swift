@@ -12,11 +12,13 @@ import Gloss
 struct Player: Decodable{
     let name:String?
     let surname:String?
-    let imageURL:String?
+    let image:String?
+    let date:String?
     
     init?(json: JSON) {
         self.name = "name" <~~ json ?? ""
         self.surname = "surname" <~~ json ?? ""
-        self.imageURL = "image" <~~ json ?? ""
+        self.image = "image" <~~ json ?? ""
+        self.date = "date" <~~ json ?? ""
     }
 }

@@ -18,6 +18,8 @@
 		634026A72014B35200ED8058 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634026A62014B35200ED8058 /* Player.swift */; };
 		634026AA2014B3F500ED8058 /* ApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634026A92014B3F500ED8058 /* ApiDataSource.swift */; };
 		634026AC2014B59200ED8058 /* SportsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634026AB2014B59200ED8058 /* SportsDataSource.swift */; };
+		634026B02014C49400ED8058 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634026AE2014C49400ED8058 /* PlayerCell.swift */; };
+		634026B12014C49400ED8058 /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634026AF2014C49400ED8058 /* PlayerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		634026A62014B35200ED8058 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		634026A92014B3F500ED8058 /* ApiDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataSource.swift; sourceTree = "<group>"; };
 		634026AB2014B59200ED8058 /* SportsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsDataSource.swift; sourceTree = "<group>"; };
+		634026AE2014C49400ED8058 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		634026AF2014C49400ED8058 /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
 		63A9E071A4683A66E8F50D7A /* Pods_HastenProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943D1C6343BC6A9BA380CF2C /* Pods-HastenProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HastenProject/Pods-HastenProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				6340269E2014B31C00ED8058 /* SportsViewController.swift */,
+				634026AE2014C49400ED8058 /* PlayerCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6340269F2014B31C00ED8058 /* SportsViewController.xib */,
+				634026AF2014C49400ED8058 /* PlayerCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				634026972014B15200ED8058 /* LaunchScreen.storyboard in Resources */,
 				634026942014B15200ED8058 /* Assets.xcassets in Resources */,
 				634026922014B15200ED8058 /* Main.storyboard in Resources */,
+				634026B12014C49400ED8058 /* PlayerCell.xib in Resources */,
 				634026A12014B31C00ED8058 /* SportsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +282,7 @@
 			files = (
 				634026A72014B35200ED8058 /* Player.swift in Sources */,
 				6340268D2014B15200ED8058 /* AppDelegate.swift in Sources */,
+				634026B02014C49400ED8058 /* PlayerCell.swift in Sources */,
 				634026AA2014B3F500ED8058 /* ApiDataSource.swift in Sources */,
 				634026A52014B34900ED8058 /* Sport.swift in Sources */,
 				634026A02014B31C00ED8058 /* SportsViewController.swift in Sources */,

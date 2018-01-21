@@ -18,7 +18,7 @@ class SportsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "PlayerCell", bundle: nil), forCellReuseIdentifier: "cell")
         loader.startAnimating()
         fetchSports()
     }
@@ -27,7 +27,6 @@ class SportsViewController: UIViewController {
         SportsDataSource.getSports(completion: { sports in
             self.loader.stopAnimating()
             self.sports = sports
-            print(sports)
             self.tableView.reloadData()
         })
     }
@@ -39,9 +38,9 @@ extension SportsViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlayerCell
         if let players = sports[indexPath.section].players{
-            cell.textLabel?.text = players[indexPath.row].name
+            cell.setupCell(player: players[indexPath.row])
         }
         return cell
     }
